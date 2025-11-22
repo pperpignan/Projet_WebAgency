@@ -1,0 +1,608 @@
+/* Pour tout média avec une largeur de 1024 pixels pour minimum */
+@media all and (min-width: 1024px)
+{  
+    @font-face 
+    {
+        font-family: 'FontAwesome';
+        src: url('webagency_images/fonts/Roboto-Regular.ttf') format('truetype'); 
+    }
+    
+    html
+    {
+        margin: 0;
+        padding: 0;
+        font-family: 'FontAwesome', sans-serif, cursive;
+        scroll-behavior: smooth;
+    }
+
+    body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Haut de ma page */
+    #Top
+    {
+        width: 100%;
+        display: flex;
+        position: fixed;
+        background-color: white;
+        z-index: 10;
+    }
+    
+    /* Contient le logo du site */
+    header
+    {
+        width: 50%;
+        text-align: center;   
+    }
+
+    header img
+    {
+        width: 30%;
+        margin-top: 2%;
+        margin-right: 7%;
+    }
+    
+    /*Menu du site */
+    nav
+    {
+        width: 60%;
+        text-align: center;
+    }
+    
+    nav ul
+    {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li
+    {
+        display: inline-block;    
+        padding: 3.3%;
+    }
+
+    nav ul li a
+    {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 1.0vw;
+    }
+    /* Element 1 de la liste */ 
+    nav ul li:nth-child(1)
+    {
+        box-shadow: 0px 3px 0px #00ace6 inset;
+        margin-left: 25%;
+    } 
+    
+    /* Survoler Menu */
+    nav ul li:hover
+    {
+        /* off-set X, off-set Y, Blur  */
+        box-shadow: 0px 3px 0px #00ace6 inset;
+    } 
+
+    #Slider 
+    {
+        position: relative;
+    }
+    
+    #Slider p
+    {
+        margin: 0;
+    }
+    
+    /* Image du slider */
+    #Slider p img
+    {
+        width: 100%;
+        margin-top: 5.0%;
+        vertical-align: middle;
+    }
+    
+    #Load_Timer
+    {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 0.5%;
+        background-color: rgb(0,0,0,0.1);
+    }
+    
+    #Timer
+    {
+        position: absolute;
+        width: 10%;
+        bottom: 0;
+        height: 0.2vw;
+        background-color: #00ace6; 
+    }
+    
+    /* Phrase d'accroche du slider */
+    #Slider_Catchline
+    {
+        position: absolute;
+        margin-top: 17%;
+        margin-left: 15%;
+        color: white;
+    }      
+    
+    #Slider_Catchline h2
+    {
+        font-size: 2.1vw;
+        margin: 0;
+    }
+
+    #Slider_Catchline p
+    {
+        font-weight: bold;
+        font-size: 0.9vw;
+    }
+    
+    /* Couleur bleu du de la catchline */
+    .bluecolor
+    {
+        color: #5CADD3;
+    }
+    
+    /* Bouton du slider */
+    #Info_Button
+    {
+        position: absolute;
+        font-size:  1.0vw;
+        background-color: #5CADD3;
+        border-bottom: 3px outset #5CADD3;
+        border-radius: 5px;
+        margin-top: 25%;
+        margin-left: 15%;
+        padding-left: 1.0%;
+        padding-right: 1.0%; 
+        color: white;
+        user-select: none;
+    }
+    
+    #Info_Button p
+    {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-weight: bold;
+ 
+    }
+    
+    /* Chevron Gauche */
+    .fa-chevron-left
+    {
+        font-size: 1.2vw;
+        color: white;
+        width: 2%;
+        top: 40%;
+        margin-left: 20%;
+        margin-top: 70%;
+    }
+    
+    /* Demi-cercle semi-transparent du chevron gauche */
+    #Left_Circle
+    {
+        position: absolute;
+        margin-top: 20%;
+        background-color: rgb(0,0,0,0.2);
+        width: 2.5%;
+        height: 12%;
+        border-top-right-radius: 150vw;
+        border-bottom-right-radius: 150vw;
+    }
+    
+     /* Chevron Droit */
+    .fa-chevron-right
+    {
+        font-size: 1.2vw;
+        color: white;
+        width: 2%;  
+        top: 40%;
+        margin-top: 70%;
+        margin-left: 45%;
+        
+    }  
+    
+    /* Demi-cercle semi-transparent du chevron droit */
+    #Right_Circle
+    {
+        width: 2.5%;
+        height: 12%;
+        background-color: rgb(0,0,0,0.2);
+        position: absolute;
+        margin-top: 20%; 
+        margin-left: 97.5%; 
+        border-top-left-radius: 100vw;
+        border-bottom-left-radius: 100vw;
+    }
+    
+/* Section SERVICES */
+    
+    #Services
+    {
+        padding-top: 6%;
+    }
+    
+    section h1
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.0vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .Transition_Container
+    {
+        width: 7%;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .Transition_Container hr
+    {
+        border: 1px solid rgb(0,0,0,0.2);
+        width: 100%;
+    }
+    
+    .Transition_Container .fa-circle
+    {
+        position: absolute;
+        color: #5CADD3;
+        font-size: 0.8vw;
+        border: 4px solid white;
+        border-radius: 100%;
+        z-index: 1;
+    }
+    
+    .Catchline p
+    {
+        text-align: center;
+        font-size: 1.0vw;
+    }
+
+    #Media
+    {
+        display: flex;
+        width: 100%;
+        margin-top: 2%;
+    }
+    
+    #Mac_Image
+    {   
+        width: 50%;
+    }
+    
+    #Mac_Image img
+    {
+        float: right;
+        margin-right: 5%;
+        width: 60%;
+    }
+    
+    #Informations
+    {
+        width: 50%;
+        display: flex;
+        margin-top: 4%;
+    }
+    
+    #Information_Text
+    {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        width: 100%;
+    }
+      
+    #Informations p
+    {
+        font-size: 1.0vw;
+        margin-left: 4%;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }  
+    
+    #Informations h2
+    {
+        font-size: 1.0vw;
+        margin-bottom: 2%;
+        margin-left: 4%;
+    }
+    
+    #Informations_Logos
+    {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1%;
+        margin-top: 4%;
+    }
+    
+    #Informations_Logos .Logos_Circle
+    {
+        position: relative;
+        width: 3.5vw;
+        height: 3.5vw;
+        border: 1px solid #E5E5E5;
+        border-radius: 100%;   
+    }
+    
+    #Informations_Logos .Logos_Circle:nth-child(2), .Logos_Circle:nth-child(3) 
+    {
+        margin-top: 1.8vw;
+    }
+    
+    #Informations_Logos .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        position: absolute;
+        font-size: 1.5vw;
+        color: #5CADD3;  
+        padding-left: 30%;
+        padding-top: 30%;
+    }
+    
+    #Informations_Logos .fa-circle
+    {
+        position: absolute;
+        font-size: 0.8vw;
+        color: #5CADD3;  
+        margin-left: 80%;
+        margin-top: 30%;
+        border: 4px solid white;
+        border-radius: 100%;
+    } 
+
+/* Section PROJETS */
+    
+    #Portfolio
+    {
+        background-color: #F5F5F5;
+        padding-top: 6.0%;
+    }
+    
+    #Menu_Portfolio
+    {
+        display: flex;
+        margin-top: 3%;
+        justify-content: center;
+        width: 100%;
+        color: grey;
+    }
+    
+    .element1
+    {
+        position: relative;
+        text-align: center;
+        padding-top: 1.0%;
+        padding-bottom: 1.0%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        background-color: #E5E5E5;
+        user-select: none;
+    }
+    
+    .element1 p
+    {
+        margin: 0;
+        padding: 0;
+        font-size: 1.0vw;
+    }
+    
+    .element1 .fa-caret-down
+    {
+        position: absolute;
+        font-size: 2vw;
+        bottom: -37%;
+        left: 45%;
+        color: #468CAD;
+        visibility: hidden;
+    }
+    
+    .element1:hover
+    {
+        background-color: #5CADD3;
+        color: white;
+        box-shadow: inset 0px -3px  #468CAD;
+    }
+    
+    .element1:nth-child(1)
+    {
+        background-color: #5CADD3;
+        color: white;
+        box-shadow: inset 0px -3px  #468CAD;
+    }
+    
+    .element1:hover .fa-caret-down
+    {
+        visibility: visible;
+    }
+    
+    .element1:nth-child(1) .fa-caret-down
+    {
+        visibility: visible;
+    } 
+    
+    .element1:nth-child(1)
+    {
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+    }
+    
+    .element1:nth-child(4)
+    {
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+    
+    #Images_Projects
+    {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #Images_Projects figure
+    {
+        position: relative;
+        margin: auto;
+        margin-bottom: 2%;     
+    }
+    
+    #Images_Projects figure:hover figcaption 
+    {
+        visibility: visible;
+    }
+    
+    #Images_Projects figure:hover .figcaption_eye 
+    {
+        visibility: visible;
+    }
+    
+    
+    #Images_Projects figure img
+    {
+        width: 22vw;
+        vertical-align: middle;
+    }
+    
+    #Images_Projects figure figcaption
+    {
+        position: absolute;
+        width: 100%;
+        height: 35%;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        visibility: hidden;
+    }
+    
+    #Images_Projects figure figcaption h2
+    {
+        color: white;
+        font-weight: bold;
+        margin: 0;
+        font-size: 1vw;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+    
+    #Images_Projects figure figcaption p
+    {
+        color: white;
+        margin: 0;
+        font-size: 1vw;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    
+    #Images_Projects figure .figcaption_eye
+    {
+        position: absolute;
+        width: 15%;
+        height: 20%;
+        background-color: #468CAD;
+        border: 2px solid white;
+        border-radius: 100%;
+        text-align: center;
+        z-index: 2;
+        margin-left: 70%;
+        margin-top: 36%;
+        visibility: hidden;
+    }
+    
+    #Images_Projects figure  .figcaption_eye .fa-eye
+    {
+        font-size: 1.0vw;
+        margin-top: 30%;
+        color: white;
+    }
+ 
+    #Contact
+    {
+        position: relative;
+    }
+    
+    #Map
+    {
+        position: absolute;
+        width: 100%;
+        background-color: rgb(78,177,214);
+    } 
+    
+    #Contact iframe
+    {
+        width: 100%;
+        height: 900px;
+        border: 0;
+        opacity: 0.6;
+        vertical-align: middle;
+    }  
+    
+    #Formulary
+    {
+        position: absolute;
+        margin-left: 65%;
+        margin-top: 5%;
+        height: 550px;
+        background-color: rgba(255,255,255, 0.8);
+        padding: 1%;
+    }
+    
+    #Formulary h2
+    {
+        margin-bottom: 3%;
+    }
+    
+    #Formulary form p
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    #Formulary form p input
+    {
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        padding: 2%;
+        border-radius: 5%;
+    }
+    
+    
+    #Formulary form p textarea
+    {
+        margin-top: 2.5%;
+        padding: 2%;
+        height: 200px;
+        width: 300px;
+        border-radius: 3%;
+        resize: none;
+    }
+    
+    #Formulary form p #Submit_Button
+    {
+        width: 35%;
+        border: 1px solid #4E90AF;
+        border-radius: 10%;
+        font-weight: bold;
+        color: white;
+        background-color: #5CADD3;
+        border-bottom: 3px outset #4E90AF;
+    }
+}
+
+
+
+
+
+
+
+
+
